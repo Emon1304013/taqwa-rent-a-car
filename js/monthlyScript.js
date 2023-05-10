@@ -16,7 +16,7 @@ async function fetchData() {
     monthlyCarsDiv.classList.add('col-md-6')
     monthlyCarsDiv.innerHTML = `
     <div class="card mb-4" style="">
-      <img class="card-img-top mx-auto" src="images/daily_vehicles/${cars.image}" alt="" style="max-width:300px; max-height:200px" >
+      <img class="card-img-top mx-auto" src="images/vehicles/${cars.image}" alt="" style="max-width:300px; max-height:200px" >
       <div class="card-body">
         <h5 class="card-title">${cars.model}</h5>
         <p class="">

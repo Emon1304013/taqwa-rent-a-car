@@ -17,7 +17,7 @@ async function fetchData() {
     dailyCarsDiv.classList.add('col-md-6')
     dailyCarsDiv.innerHTML = `
     <div class="card mb-4" style="">
-      <img class="card-img-top mx-auto" src="images/daily_vehicles/${cars.image}" alt="" style="max-width:300px; max-height:200px" >
+      <img class="card-img-top mx-auto" src="images/vehicles/${cars.image}" alt="" style="max-width:300px; max-height:200px" >
       <div class="card-body">
         <h5 class="card-title">${cars.model}</h5>
         <p class="">
@@ -31,25 +31,6 @@ async function fetchData() {
       </div>
     </div>`
   dailyCars.appendChild(dailyCarsDiv);
-  });
-
-  cars.monthly.forEach(cars => {
-    const monthlyCarsDiv = document.createElement('div');
-    monthlyCarsDiv.classList.add('col-md-6')
-    monthlyCarsDiv.innerHTML = `
-    <div class="card mb-4" style="">
-      <img class="card-img-top mx-auto" src="images/daily_vehicles/${cars.image}" alt="" style="max-width:300px; max-height:200px" >
-      <div class="card-body">
-        <h5 class="card-title">${cars.model}</h5>
-        <p class="">
-        <ul>
-        <li>${cars.description[0]}</li>
-        <li>${cars.description[1]}</li>
-          
-        </ul>
-      </div>
-    </div>`
-    monthlyCars.appendChild(monthlyCarsDiv);
   });
     
   });
